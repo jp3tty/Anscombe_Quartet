@@ -24,20 +24,20 @@ anscombe = pd.DataFrame({'x1':[10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5],
 
 # fit linear regression models by ordinary least squares
 set_I_design_matrix = sm.add_constant(anscombe['x1'])
-set_I_model = sm.OLS(anscombe['y1'], set_I_design_matrix)
-print(set_I_model).fit().summary()
+set_I_model = sm.OLS(anscombe['y1'], set_I_design_matrix).fit()
+print(set_I_model.summary())
 
 set_II_design_matrix = sm.add_constant(anscombe['x2'])
-set_II_model = sm.OLS(anscombe['y2'], set_II_design_matrix)
-print(set_II_model).fit().summary()
+set_II_model = sm.OLS(anscombe['y2'], set_II_design_matrix).fit()
+print(set_II_model.summary())
 
 set_III_design_matrix = sm.add_constant(anscombe['x3'])
-set_III_model = sm.OLS(anscombe['y3'], set_III_design_matrix)
-print(set_III_model).fit().summary()
+set_III_model = sm.OLS(anscombe['y3'], set_III_design_matrix).fit()
+print(set_III_model.summary())
 
 set_IV_design_matrix = sm.add_constant(anscombe['x4'])
-set_IV_model = sm.OLS(anscombe['y4'], set_IV_design_matrix)
-print(set_IV_model).fit().summary()
+set_IV_model = sm.OLS(anscombe['y4'], set_IV_design_matrix).fit()
+print(set_IV_model.summary())
 
 # create scatter plots
 fig = plt.figure()
