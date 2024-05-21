@@ -75,7 +75,7 @@ set_IV.set_ylim(2, 14)
 
 plt.subplots_adjust(left=0.1, right=0.925, top=0.925, bottom=0.1,
                     wspace=0.3, hspace=0.4)
-plt.savefig('fig_anscombe_Python.pdf', bbox_inches = 'tight', dpi=None,
+plt.savefig('Anscombe_Quartet/Results/fig_anscombe_Python.pdf', bbox_inches = 'tight', dpi=None,
             facecolor='w', edgecolor='b', orientation='portrait', #papertype=None,
             format=None, transparent=True, pad_inches=0.25) #, frameon=None)
 
